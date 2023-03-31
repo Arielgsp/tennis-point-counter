@@ -6,6 +6,9 @@ let btnReset = document.getElementById("btn-reset");
 let winner1 = document.getElementById("winner1");
 let winner2 = document.getElementById("winner2");
 
+let numberSet1 = document.getElementById("number-set-1");
+let numberSet2 = document.getElementById("number-set-2");
+
 console.log(number);
 let cont1 = 0;
 let cont2 = 0;
@@ -73,4 +76,8 @@ function empate1() {
   if (cont1 == 45 && cont2 == 45) {
     number1.innerText = "A";
   }
+}
+
+if (winner1.innerText == "Ganador jugador 1") {
+  alert("hola");
 }
